@@ -11,5 +11,5 @@ jobs:
         COMMAND: "pip install poetry && poetry config virtualenvs.create false && poetry install"
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
-        command: test --all-targets || true
+        command: test --all-targets --fail-on=patchable
 
