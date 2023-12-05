@@ -1,5 +1,5 @@
 name: Example workflow for Python using Snyk 
-on: pull_request
+on: [pull_request, workflow_dispatch]
 jobs:
   security:
     runs-on: ubuntu-latest
